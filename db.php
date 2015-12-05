@@ -23,16 +23,17 @@ mysql_select_db("bui", $con) or die (mysql_error()); //Select the correct databa
 foreach($typeids as $typeid)
 
 foreach ($xml -> marketstat as $row) {
-	$typeid = $row -> item_ID;
+	$item=$xml->xpath('/evec_api/marketstat/type[@id='.$typeid.']') -> item;
+	$price= (float) $item[0]->sell->percentile -> price;
 	}
 // perform sql query
 
-$sql = "INSERT INTO 'prices' ('item_ID', 'price')" 
-           . "VALUES ('$typeid')";
+$sql = "INSERT INTO prices (item, price)" 
+           . "VALUES ('$type', '$price')";
 
 $result = mysql_query($sql);
 if (!$result) {
-	echo 'MySQL ERROR';
+	die (mysql_error());
     } else {
 		echo ' SUCCES';
 	}
