@@ -1,6 +1,6 @@
 <?php
 
-$typeids=array(34,35);
+$typeids=array(34);
 $url="http://api.eve-central.com/api/marketstat?regionlimit=10000002&typeid=".join('&typeid=',$typeids);
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -17,19 +17,22 @@ curl_close($ch);
 
 $xml = simplexml_load_string($data);
 
-$con=mysql_connect("localhost","root",""); //Connect to database server
+$con=mysql_connect("localhost","root","Dutchpower89]"); //Connect to database server
 mysql_select_db("bui", $con) or die (mysql_error()); //Select the correct database
 
 foreach($typeids as $typeid)
+{
+	
+    $item=$xml->xpath('/evec_api/marketstat/type[@id='.$typeid.']');
+    $price= (float) $item[0]->sell->percentile;
+    $price=round($price,2);
+    echo $typeid." ".$price."\n";
+}
 
-foreach ($xml -> marketstat as $row) {
-	$item=$xml->xpath('/evec_api/marketstat/type[@id='.$typeid.']') -> item;
-	$price= (float) $item[0]->sell->percentile -> price;
-	}
 // perform sql query
 
 $sql = "INSERT INTO prices (item, price)" 
-           . "VALUES ('$type', '$price')";
+           . "VALUES ('$typeid', '$price')";
 
 $result = mysql_query($sql);
 if (!$result) {
