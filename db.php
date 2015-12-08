@@ -5,6 +5,7 @@ $username = "root";
 $password = "";
 $dbname = "bui";
 
+$prices = array();
 $typeids=array(34,35,36,37);
 $url="http://api.eve-central.com/api/marketstat?regionlimit=10000002&typeid=".join('&typeid=', $typeids);
 $ch = curl_init($url);
@@ -25,7 +26,7 @@ $xml =new SimpleXMLElement($data);
 foreach($typeids as $typeid){
     $item=$xml->xpath('/evec_api/marketstat/type[@id='.$typeid.']');
     $price= (float) $item[0]->sell->percentile;
-    $price=round($price,2);
+    $prices[$typeid]=round($price,2);
 	echo $typeid." ".$price."\n";
 }
 
@@ -41,7 +42,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 $stmt = $conn->prepare("INSERT INTO `item_prices` (`itemid`, `price`) VALUES (?,?) ON DUPLICATE KEY UPDATE `itemid`= VALUES (itemid)");
 
 foreach ($typeids as $id) {
-   $stmt->bind_param('sd', $id, $price);
+   $stmt->bind_param('sd', $id, $prices[$id]);
    $stmt->execute();
 }
 
