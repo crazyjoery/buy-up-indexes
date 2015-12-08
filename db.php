@@ -1,7 +1,12 @@
 <?php
 
-$typeids=array(34);
-$url="http://api.eve-central.com/api/marketstat?regionlimit=10000002&typeid=".join('&typeid=',$typeids);
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "bui";
+
+$typeids=array(34,35,36,37);
+$url="http://api.eve-central.com/api/marketstat?regionlimit=10000002&typeid=".join('&typeid=', $typeids);
 $ch = curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_HEADER, 0);
@@ -12,32 +17,42 @@ if($data === false)
 }
 else
 {
-curl_close($ch);
+    curl_close($ch);
 }
 
-$xml = simplexml_load_string($data);
+$xml =new SimpleXMLElement($data);
 
-$con=mysql_connect("localhost","root","Dutchpower89]"); //Connect to database server
-mysql_select_db("bui", $con) or die (mysql_error()); //Select the correct database
-
-foreach($typeids as $typeid)
-{
-	
+foreach($typeids as $typeid){
     $item=$xml->xpath('/evec_api/marketstat/type[@id='.$typeid.']');
     $price= (float) $item[0]->sell->percentile;
     $price=round($price,2);
-    echo $typeid." ".$price."\n";
+	echo $typeid." ".$price."\n";
 }
 
-// perform sql query
+$types = implode(" ",$typeids);
 
-$sql = "INSERT INTO prices (item, price)" 
-           . "VALUES ('$typeid', '$price')";
+mysqli_report(MYSQLI_REPORT_ALL); // Traps all mysqli error 
 
-$result = mysql_query($sql);
-if (!$result) {
-	die (mysql_error());
-    } else {
-		echo ' SUCCES';
+ try {
+   // code that may fail here
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+$stmt = $conn->prepare("INSERT INTO `item_prices` (`itemid`, `price`) VALUES (?,?) ON DUPLICATE KEY UPDATE `itemid`= VALUES (itemid)");
+
+foreach ($typeids as $id) {
+   $stmt->bind_param('sd', $id, $price);
+   $stmt->execute();
+}
+
+echo "New records created successfully";
+
+$stmt->close();
+$conn->close();
+
+} catch (\Exception $e) {
+	echo $e;
 	}
+
+
 ?>
