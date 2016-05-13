@@ -229,8 +229,8 @@ function number_format (number, decimals, dec_point, thousands_sep)
         s[1] += new Array(prec - s[1].length + 1).join('0');
     }
     return s.join(dec);
-<<<<<<< HEAD
+
 }
-=======
+
 }
->>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
+
