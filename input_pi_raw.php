@@ -140,7 +140,6 @@ $string=implode(",",$Felsic[0]); $felsic = number_format($string*0.925 , 2, ",",
 $string=implode(",",$Non[0]); $non_cs = number_format($string*0.925 , 2, ",", "."); //Non-CS Crystals
 $string=implode(",",$Suspended[0]); $suspended = number_format($string*0.925 , 2, ",", "."); //Suspended Plasma
 $string=implode(",",$Autotrophs[0]); $autotrophs = number_format($string*0.925 , 2, ",", "."); //Autotrophs
->>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
