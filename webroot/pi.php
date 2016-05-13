@@ -14,7 +14,6 @@ include '../input_pi_raw.php';
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/eve-link.css" rel="stylesheet">
-<<<<<<< HEAD
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 =======
 >>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
