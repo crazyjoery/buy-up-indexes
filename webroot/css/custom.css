@@ -6,6 +6,22 @@ body {
   text-align: center;
 }
 
+.panel-fixed {
+    margin-bottom: 20px;
+    background-color: #2e3338;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+	position: relative;
+}
+
+.panel-invoice {
+    border-color: rgba(0,0,0,0.6);
+	position: fixed;
+    z-index: 999;
+}
+
 #threeColumns {} .column {
     border-top: 1px solid #ffffff;
     background: #bebebe;

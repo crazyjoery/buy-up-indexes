@@ -586,7 +586,7 @@ width: 25%!important;
 .footer{
 	padding:2em 0;
 	text-align:center;
-	border-top:10px solid #272B30;
+	background-color: rgba(53, 58, 65, 0.8);
 }
 ul.social{
 	padding:0;
