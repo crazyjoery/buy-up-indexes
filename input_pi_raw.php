@@ -108,6 +108,7 @@ if($Autotrophs === false) {
 }
 
 //Calculate Corp Price
+<<<<<<< HEAD
 $string=implode(".",$Aqueous[0]); $aqueous = number_format($string*0.925 , 2, ".", ""); //Aqueous Liquids
 $string=implode(".",$Ionic[0]); $ionic = number_format($string*0.925 , 2, ".", ""); //Ionic Solutions
 $string=implode(".",$Base[0]); $base = number_format($string*0.925 , 2, ".", ""); //Base Metals
@@ -123,10 +124,28 @@ $string=implode(".",$Felsic[0]); $felsic = number_format($string*0.925 , 2, ".",
 $string=implode(".",$Non[0]); $non_cs = number_format($string*0.925 , 2, ".", ""); //Non-CS Crystals
 $string=implode(".",$Suspended[0]); $suspended = number_format($string*0.925 , 2, ".", ""); //Suspended Plasma
 $string=implode(".",$Autotrophs[0]); $autotrophs = number_format($string*0.925 , 2, ".", ""); //Autotrophs
+=======
+$string=implode(",",$Aqueous[0]); $aqueous = number_format($string*0.925 , 2, ",", "."); //Aqueous Liquids
+$string=implode(",",$Ionic[0]); $ionic = number_format($string*0.925 , 2, ",", "."); //Ionic Solutions
+$string=implode(",",$Base[0]); $base = number_format($string*0.925 , 2, ",", "."); //Base Metals
+$string=implode(",",$Heavy[0]); $heavy = number_format($string*0.925 , 2, ",", "."); //Heavy Metals
+$string=implode(",",$Noble[0]); $noble = number_format($string*0.925 , 2, ",", "."); //Noble Metals
+$string=implode(",",$Carbon[0]); $carbon = number_format($string*0.925 , 2, ",", "."); //Carbon Compounds
+$string=implode(",",$Micro[0]); $micro = number_format($string*0.925 , 2, ",", "."); //Microorganisms
+$string=implode(",",$Complex[0]); $complex = number_format($string*0.925 , 2, ",", "."); //Complex Organisms
+$string=implode(",",$Planktic[0]); $planktic = number_format($string*0.925 , 2, ",", "."); //Planktic Colonies
+$string=implode(",",$Noble_Gas[0]); $noble_gas = number_format($string*0.925 , 2, ",", "."); //Noble Gas
+$string=implode(",",$Reactive[0]); $reactive = number_format($string*0.925 , 2, ",", "."); //Reactive Gas
+$string=implode(",",$Felsic[0]); $felsic = number_format($string*0.925 , 2, ",", "."); //Felsic Magma
+$string=implode(",",$Non[0]); $non_cs = number_format($string*0.925 , 2, ",", "."); //Non-CS Crystals
+$string=implode(",",$Suspended[0]); $suspended = number_format($string*0.925 , 2, ",", "."); //Suspended Plasma
+$string=implode(",",$Autotrophs[0]); $autotrophs = number_format($string*0.925 , 2, ",", "."); //Autotrophs
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
 <script>
+<<<<<<< HEAD
     var aqueous = <?= $aqueous ?>;
     var ionic = <?= $ionic ?>;
     var base = <?= $base ?>;
@@ -144,3 +163,22 @@ $string=implode(".",$Autotrophs[0]); $autotrophs = number_format($string*0.925 ,
     var autotrophs = <?= $autotrophs ?>;
 </script>
 <script src="webroot/js/rawpi_cal.js"></script>
+=======
+    var aqueous = "<?= $aqueous ?>";
+    var ionic = "<?= $ionic ?>";
+    var base = "<?= $base ?>";
+    var heavy = "<?= $heavy ?>";
+    var noble = "<?= $noble ?>";
+    var carbon = "<?= $carbon ?>";
+    var micro = "<?= $micro ?>";
+    var complex = "<?= $complex ?>";
+    var planktic = "<?= $planktic ?>";
+    var noble_gas = "<?= $noble_gas ?>";
+    var reactive = "<?= $reactive ?>";
+    var felsic = "<?= $felsic ?>";
+    var non_cs = "<?= $non_cs ?>";
+    var suspended = "<?= $suspended ?>";
+    var autotrophs = "<?= $autotrophs ?>";
+</script>
+<script src="js/rawpi_cal.js"></script>
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c

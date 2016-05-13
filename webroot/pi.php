@@ -14,7 +14,10 @@ include '../input_pi_raw.php';
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/eve-link.css" rel="stylesheet">
+<<<<<<< HEAD
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+=======
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style type="text/css">
@@ -23,6 +26,7 @@ include '../input_pi_raw.php';
     background-repeat:no-repeat;
     background-attachment: fixed;
     }
+<<<<<<< HEAD
     .affix {
         top: 60px;
     }
@@ -41,6 +45,10 @@ include '../input_pi_raw.php';
     </script>
 </head>
 <body>
+=======
+    </style>
+</head>
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
 <!--Navigation-->
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="navbar-header">
@@ -87,7 +95,10 @@ include '../input_pi_raw.php';
         panel.<br>
         - All you have to do now is click on the <strong>Contract Value</strong> price that is given<br>
         - This will open a "Copy to clipboard" window with a easy to copy number to use in the EVE Contract window.<br>
+<<<<<<< HEAD
             <span style="font-family: Arial; color: #FF2A2A;"><strong>- Contract between 200-300 mil ISK at a time, this to allow for faster processing of the contracts.</strong></span>
+=======
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
         <span style="font-family: Arial; color: #8FEF2F;"><strong>Database was last updated
                 on: <?php echo $string = implode("", $update[0]); ?></strong></span>
     </div>
@@ -133,7 +144,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="aqueous" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Aqueous Liquids"
+<<<<<<< HEAD
                                id="calc-input-aqueous_units-value">
+=======
+                               id="calc-input-aqueous-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -141,7 +156,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="ionic" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Ionic Solutions"
+<<<<<<< HEAD
                                id="calc-input-ionic_units-value">
+=======
+                               id="calc-input-ionic-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -149,7 +168,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="base" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Base Metals"
+<<<<<<< HEAD
                                id="calc-input-base_units-value">
+=======
+                               id="calc-input-base-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -157,7 +180,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="heavy" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Heavy Metals"
+<<<<<<< HEAD
                                id="calc-input-heavy_units-value">
+=======
+                               id="calc-input-heavy-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -165,7 +192,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="noble" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Noble Metals"
+<<<<<<< HEAD
                                id="calc-input-noble_units-value">
+=======
+                               id="calc-input-noble-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -173,7 +204,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="carbon" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Carbon Compounds"
+<<<<<<< HEAD
                                id="calc-input-carbon_units-value">
+=======
+                               id="calc-input-carbon-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -181,7 +216,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="micro" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Micro Organisms"
+<<<<<<< HEAD
                                id="calc-input-micro_units-value">
+=======
+                               id="calc-input-micro-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -189,7 +228,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="complex" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Complex Organisms"
+<<<<<<< HEAD
                                id="calc-input-complex_units-value">
+=======
+                               id="calc-input-complex-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -197,7 +240,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="planktic" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Planktic Colonies"
+<<<<<<< HEAD
                                id="calc-input-planktic_units-value">
+=======
+                               id="calc-input-planktic-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -205,7 +252,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="noble_gas" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Noble Gas"
+<<<<<<< HEAD
                                id="calc-input-noble_gas_units-value">
+=======
+                               id="calc-input-noble_gas-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -213,7 +264,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="reactive" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Reactive Gas"
+<<<<<<< HEAD
                                id="calc-input-reactive_units-value">
+=======
+                               id="calc-input-reactive-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -221,7 +276,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="felsic" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Felsic Magma"
+<<<<<<< HEAD
                                id="calc-input-felsic_units-value">
+=======
+                               id="calc-input-felsic-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -229,7 +288,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="non_cs" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Non-CS Crystals"
+<<<<<<< HEAD
                                id="calc-input-non_cs_units-value">
+=======
+                               id="calc-input-non_cs-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -237,7 +300,11 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="suspended" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Suspended Plasma"
+<<<<<<< HEAD
                                id="calc-input-suspended_units-value">
+=======
+                               id="calc-input-suspended-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                     <p>
@@ -245,14 +312,22 @@ include '../input_pi_raw.php';
 
                     <div class="input-group form-control" id="autotrophs" style="padding: 0; border: none;">
                         <input type="number" class="form-control text-right typeahead" placeholder="Autotrophs"
+<<<<<<< HEAD
                                id="calc-input-autotrophs_units-value">
+=======
+                               id="calc-input-autotrophs-value">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     </div>
                     </p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
+<<<<<<< HEAD
             <div class="panel panel-default" data-spy="affix" data-offset-top="450" data-offset-bottom="370" id="invoice-panel">
+=======
+            <div class="panel panel-default">
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                 <div class="panel-heading">
                     <h3 class="panel-title"><strong>Invoice</strong>
                         <label data-html="true" data-original-title="<b>Fees</b>" class="popover-reward text-info"
@@ -266,6 +341,7 @@ include '../input_pi_raw.php';
                     </h3>
                 </div>
                 <div class="panel-body">
+<<<<<<< HEAD
                     <p id="calc-output-row">Total Aqueous Liquids value <span class="pull-right"><span id="calc-output-aqueous-value"></span></p>
                     <p id="calc-output-row">Total Ionic Solutions value <span class="pull-right"><span id="calc-output-ionic-value"></span></p>
                     <p id="calc-output-row">Total Base Metals value <span class="pull-right"><span id="calc-output-base-value"></span></p>
@@ -281,6 +357,23 @@ include '../input_pi_raw.php';
                     <p id="calc-output-row">Total Non-CS Crystals value <span class="pull-right"><span id="calc-output-non_cs-value"></span></p>
                     <p id="calc-output-row">Total Suspended Plasma value <span class="pull-right"><span id="calc-output-suspended-value"></span></p>
                     <p id="calc-output-row">Total Autotrophs value <span class="pull-right"><span id="calc-output-autotrophs-value"></span></p>
+=======
+                    <p id="calc-output-aqueous-row">Total Aqueous Liquids value <span class="pull-right"><span id="calc-output-aqueous-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Ionic Solutions value <span class="pull-right"><span id="calc-output-ionic-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Base Metals value <span class="pull-right"><span id="calc-output-base-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Heavy Metals value <span class="pull-right"><span id="calc-output-heavy-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Noble Metals value <span class="pull-right"><span id="calc-output-noble-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Carbon Compounds value <span class="pull-right"><span id="calc-output-carbon-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Micro Organisms value <span class="pull-right"><span id="calc-output-micro-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Complex Organisms value <span class="pull-right"><span id="calc-output-complex-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Planktic Colonies value <span class="pull-right"><span id="calc-output-planktic-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Noble Gas value <span class="pull-right"><span id="calc-output-noble_gas-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Reactive Gas value <span class="pull-right"><span id="calc-output-reactive-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Felsic Magma value <span class="pull-right"><span id="calc-output-felsic-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Non-CS Crystals value <span class="pull-right"><span id="calc-output-non-cs-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Suspended Plasma value <span class="pull-right"><span id="calc-output-suspended-value"></span></p>
+                    <p id="calc-output-aqueous-row">Total Autotrophs value <span class="pull-right"><span id="calc-output-autotrophs-value"></span></p>
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
                     <hr>
                     <p id="calc-output-reward-row">
                         <b>Contract Value</b> <a href="#" class="pull-right" onclick="$('#clipboard').modal('show');$('#clipboard-content').val(calcNow()).select();">
@@ -390,7 +483,13 @@ include '../input_pi_raw.php';
 <script src="js/typeahead.bundle.js"></script>
 <script src="js/handlebars-v1.3.0.js"></script>
 <script src="js/rawpi_cal.js"></script>
+<<<<<<< HEAD
 <!--<script src="js/fixed_div.js"></script>-->
 
 </body>
 </html>
+=======
+
+</body>
+</html>
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c

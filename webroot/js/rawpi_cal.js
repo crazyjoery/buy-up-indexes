@@ -150,6 +150,7 @@ function calcNow() {
 
     var aqueousPrice = aqueousReward;
     var ionicPrice = ionicReward;
+<<<<<<< HEAD
     var basePrice = baseReward;
     var heavyPrice = heavyReward;
     var noblePrice = nobleReward;
@@ -163,6 +164,21 @@ function calcNow() {
     var non_csPrice = non_csReward;
     var suspendedPrice = suspendedReward;
     var autotrophsPrice = autotrophsReward;
+=======
+	var basePrice = baseReward;
+	var heavyPrice = heavyReward;
+	var noblePrice = nobleReward;
+	var carbonPrice = carbonReward;
+	var microPrice = microReward;
+	var complexPrice = complexReward;
+	var plankticPrice = plankticReward;
+	var noble_gasPrice = nobleReward;
+	var reactivePrice = reactiveReward;
+	var felsicPrice = felsicReward;
+	var non_csPrice = non_csReward;
+	var suspendedPrice = suspendedReward;
+	var autotrophsPrice = autotrophsReward;
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
 
     var totalReward = aqueousPrice+ionicPrice+basePrice+heavyPrice+noblePrice+carbonPrice+microPrice+complexPrice+plankticPrice+
 	noble_gasPrice+reactivePrice+felsicPrice+non_csPrice+suspendedPrice+autotrophsPrice;
@@ -213,4 +229,8 @@ function number_format (number, decimals, dec_point, thousands_sep)
         s[1] += new Array(prec - s[1].length + 1).join('0');
     }
     return s.join(dec);
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ccffdfdeebfc515e0fb12d0405c5f6842859013c
