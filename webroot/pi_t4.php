@@ -323,7 +323,7 @@ include '../input_pi_t4.php';
     <!-- Clipboard -->
 
     <script src="js/jquery.cookie.js"></script>
-    <script src="js/freight.js"></script>
+    <script src="js/custom.js"></script>
     <script src="js/typeahead.bundle.js"></script>
     <script src="js/handlebars-v1.3.0.js"></script>
     <script src="js/t4_pi_cal.js"></script>
