@@ -1,6 +1,0 @@
-The following cronjobs will import all the prices for the specified items every 12 hours. That is the recommended time to prevent issues with the eve-central api
-Just add them in your crontab and they'll start to do their thing
-
-0	*/12	*	*	* /usr/local/bin/php import_ore-min.php //Adds all ore and mineral prices
-0	*/12	*	*	* /usr/local/bin/php import_ice-fuel.php //Adds all ice, ice products and fuel block prices
-0	*/12	*	*	* /usr/local/bin/php import_PI.php // Adds all PI prices
