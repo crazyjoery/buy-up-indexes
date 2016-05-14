@@ -6,11 +6,7 @@ This is the laravel 5.2 package for the lone star warriors buy up indexes. Reaso
 
 ## Install
 
-Via Composer
-
-``` bash
-$ composer require jpigmans/bui
-```
+Coming Soon
 
 ## Usage
 
