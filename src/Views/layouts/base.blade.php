@@ -87,7 +87,7 @@
 </div>
 
 <div class="container">
-    @include('flash') {{-- The flash file handles the error display --}}
+    @include('bui::flash') {{-- The flash file handles the error display --}}
 </div>
 
 @yield('content') {{-- All remaining body content is displayed through the content tag --}}
