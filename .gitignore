@@ -1,0 +1,9 @@
+/.styleci.yml
+/.editorconfig
+# Created by .ignore support plugin (hsz.mobi)
+### Laravel template
+/bootstrap/compiled.php
+.env.*.php
+.env.php
+.env
+
